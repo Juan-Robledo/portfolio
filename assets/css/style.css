@@ -1,0 +1,381 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4{
+    /*font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+span{
+    font-family: 'Roboto Mono', monospace;
+}
+.encabezado{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    filter: grayscale(100%);
+}
+.encabezado .box1{
+    font-size: 2rem;
+    padding: 20px 20px;
+    border: 2px solid #ffffff;
+    font-weight: 100;
+    color: #ffffff;
+}
+.encabezado .box2{
+    font-size: 2.5rem;
+    padding: 20px 0;
+    font-weight: lighter;
+    color: #ffffff;
+}
+.encabezado .box3{
+    font-size: 1.5rem;
+    padding: 20px 0;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+/*menu*/
+.bar{
+    position: fixed;
+}
+.bar i{
+    border: none;
+}
+.menu{
+    display: none;
+}
+.menu ul{
+    padding: 0;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 30px;
+    color: #222222;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #222222;
+}
+.bar:hover .menu{
+    width: 170px;
+    padding: 10px;
+    display: block;
+    position: absolute;
+    bottom: 90px;
+    background-color: #ffffff7c;
+}
+.bar .menu ul li:hover{
+    padding-top: 5px;
+}
+
+
+/*estilos de fondo*/
+.holder{
+    border: 1px solid #444444;
+    padding: 30px;
+}
+.texture{
+    background: url(../image/texture.png);
+    border: 1px solid #444444;
+    padding: 30px;
+}
+
+/*agsinacion de tamaños section*/
+.about, .formacion, .experiencia, .fun, .contactame{
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.portfolio{
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/*agsinacion de tamaño holder*/
+.aboutme, .education, .workexperence, .formulario{
+    min-height: 550px;
+    flex-basis: 55%;
+}
+.mywork, .facts{
+    min-height: 550px;
+    flex-basis: 90%;
+    text-align: center;
+}
+/*agsinacion de tamaño texture*/
+.profile, .skills, .testimonials, .contact{
+    height: 550px;
+    flex-basis: 30%;
+}
+.profile{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.profile .perfil img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    filter: grayscale(1);
+    margin-bottom: 30px;
+}
+.about .holder .intro{
+    flex-basis: 100%;
+}
+i{
+    font-size: 3rem;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444444;
+}
+.about .holder h2,h4{
+    padding-bottom: 20px;
+}
+.about .holder .hob{
+    flex-basis: 100%;
+}
+.about .texture .datos{
+    font-size: 1.2rem;
+}
+/*seccion de trabajo*/
+.experiencia .workexperence .realizados span{
+    display: block;
+    line-height: 2rem;
+}
+
+/*seccion de formacion*/
+.formacion .education div{
+    height: 60px;
+}
+.formacion .skills .habilidad{
+    line-height: 3rem;
+}
+.formacion .skills, .formacion .education h2{
+    padding-bottom: 20px;
+}
+.container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.skill{
+    color: white; /* White text color */
+}
+.html{
+    width: 80%;
+    background-color: #222222;
+}
+.css{
+    width: 65%;
+    background-color: #222222;
+}
+.js{
+    width: 30%;
+    background-color: #222222;
+}
+.git{
+    width: 60%;
+    background-color: #222222;
+}
+
+/*seccion testimonios*/
+.testimonials .cristian, .testimonials .lucio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-end;
+}
+.testimonials .cristian img, .lucio img{
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.testimonials .cristian span, .lucio span{
+    border: 1px solid #333333;
+    padding: 10px;
+    margin: 6px 0;
+}
+
+
+/*seccion de portfolio*/
+.portfolio .mywork h2{
+    padding-bottom: 20px;
+}
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.galeria .item, .galeria .iten{
+    text-align: center;
+    height: 200px;
+    flex-basis: 30%;
+    margin: 10px;
+}
+.galeria .iten{
+    text-transform: capitalize;
+}
+.galeria .item i, .galeria .iten i{
+    border: none;
+}
+.galeria .item:hover i{
+    font-size: 0;
+}
+.galeria .item:hover{
+    font-size: 0;
+}
+.galeria .landing:hover{
+    background: url(../image/landing.png);
+    background-size: cover;
+    background-repeat: repeat;
+}
+.galeria .picture:hover{
+    background: url(../image/galeriadefoto.PNG);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+.galeria .curriculum:hover{
+    background: url(../image/porfolio.PNG);
+    background-size: cover;
+    background-repeat: repeat;
+}
+.galeria .menuDesplegable:hover{
+    background: url(../image/menudesplegable.PNG);
+    background-size: cover;
+    background-repeat: repeat;
+}
+/*seccion de fun*/
+.fun h2{
+    padding-bottom: 20px;
+}
+
+/*seccion de contactame*/
+input, textarea{
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    border-bottom:1px solid #222222;
+}
+textarea{
+    height: 70px;
+}
+[type = submit]{
+    margin-top: 10px;
+    width: 30%;
+    border: 0.8px solid #222222;
+}
+
+
+.contact{
+    line-height: 50px;
+}
+
+/*agsina color a los enlaces y saca el borde*/
+.link i{
+    border: none;
+}
+.link a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: #222222;
+}
+
+.location a{
+    text-decoration: none;
+}
+.location .mapa{
+    color: #222222;
+    border-bottom: 1px solid #444444;
+    display: inline;
+    padding-bottom: 10px;
+}
+.location iframe{
+    display: none;
+}
+.location:hover iframe{
+    position: absolute;
+    display: block;
+}
+
+
+@media screen and (max-width: 1024px){
+    .aboutme, .education, .workexperence, .formulario{
+        flex-basis: 50%;
+    }
+    .mywork, .facts {
+        flex-basis: 87%;
+    }
+}
+@media screen and (max-width: 768px){
+    html{
+        font-size: 13px;
+    }
+    main{
+        max-width: 650px;
+        margin: 10px auto;
+    }
+    .about, .formacion, .experiencia, .fun, .contactame{
+        height: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px 0;
+    }
+    .aboutme, .education, .workexperence, .formulario{
+        min-height: 450px;
+        margin: 10px 0;
+    }
+    .mywork, .facts {
+        flex-basis: 100%;
+    }
+    .portfolio{
+        height: 100%;
+    }
+    .about .aboutme{
+        order: 1;
+    }
+    .galeria{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+}
+@media screen and (max-width: 425px){
+    html{
+        font-size: 10px;
+    }
+    .encabezado .box2 {
+        font-size: 1.7rem;
+    }
+    .about, .formacion, .experiencia, .fun, .contactame{
+        justify-content: flex-start;
+    }
+}
