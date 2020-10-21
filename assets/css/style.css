@@ -193,11 +193,15 @@ i{
     background-color: #222222;
 }
 .js{
-    width: 30%;
+    width: 70%;
     background-color: #222222;
 }
 .git{
     width: 60%;
+    background-color: #222222;
+}
+.vue{
+    width: 30%;
     background-color: #222222;
 }
 
